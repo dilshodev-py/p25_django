@@ -1,5 +1,4 @@
-
-
+from os.path import join
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -18,6 +17,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps'
 ]
 
 MIDDLEWARE = [
@@ -88,6 +88,9 @@ USE_TZ = True
 
 
 STATIC_URL = 'static/'
+STATIC_ROOT = join(BASE_DIR , 'static')
+MEDIA_URL = 'media/'
+MEDIA_ROOT = join(BASE_DIR , 'media')
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
