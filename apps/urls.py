@@ -15,3 +15,5 @@ urlpatterns = [
     # path('cal' , calculator_view),
     # path('users' , users_list_view)
 ]
+
+# Model , Url , View
